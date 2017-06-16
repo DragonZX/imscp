@@ -4,12 +4,29 @@ i-MSCP ChangeLog
 Git 1.4.x
 ------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------
+1.4.6
+------------------------------------------------------------------------------------------------------------------------
+
+2017-06-16: Laurent Declercq
+    RELEASE i-MSCP 1.4.6
+
+BACKEND
+    Added: iMSCP::LockFile class - Implements file locks for locking files in UNIX
+    Review: Store lock files in /var/lock instead of /tmp
+
+DISTRIBUTIONS
+    Added: Support for MySQL community server 5.6/5.7 (Debian 9/Stretch)
+
 SERVERS
     Fixed: Possible "File not found" error with Seafile (Apache < 2.4.11 with mod_proxy_fcgi)
     Fixed: Usage of undefined $conffile variable in vsftpd server uninstaller (vsftpd)
 
 INSTALLER
-    Fixed: dialog gauges overlapping
+    Fixed: Dialog gauges overlapping
+
+YOUTRACK
+    IP-1723 Race condition in i-MSCP' file locking strategy leading to concurrent processes when that is not expected
 
 ------------------------------------------------------------------------------------------------------------------------
 1.4.5
